@@ -10,7 +10,7 @@ app.use(cors())
 const server = require('http').createServer(app)
 const wss = new WebSocket.Server({ server })
 
-let clients = {} // Almacenar jugadores conectados
+let clients = {} // Almacenar jugadores conectadoss
 
 // Evento cuando un cliente se conectaa
 wss.on('connection', (ws) => {
